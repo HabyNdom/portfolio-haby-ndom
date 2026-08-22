@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-labelledby="title desc">
-  <title id="title">Logo SenQuiz</title>
-  <desc id="desc">Logo bleu et rouge de l'application SenQuiz</desc>
-  <rect width="320" height="180" rx="16" fill="#c7d6e3"/>
-  <circle cx="74" cy="90" r="42" fill="#e6654d"/>
-  <text x="58" y="111" fill="#f7f4ee" font-family="Arial, sans-serif" font-size="62" font-weight="700">?</text>
-  <text x="132" y="91" fill="#20282d" font-family="Arial, sans-serif" font-size="38" font-weight="700">Sen</text>
-  <text x="132" y="124" fill="#2f6a58" font-family="Arial, sans-serif" font-size="30" font-weight="700">Quiz</text>
-</svg>
