@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Haby Ndom, Développeuse Web & Logiciel. Découvrez ses projets applicatifs (Plateforme de recrutement ESCOA, E-commerce, Mobilité), ses compétences techniques approfondies et ses compétences transversales.">
+  <meta name="description" content="Portfolio de Haby Ndom, Développeuse Web &amp; Logiciel. Découvrez ses projets (Plateforme recrutement ESCOA, E-commerce, Mobilité), ses compétences techniques approfondies et ses compétences transversales.">
   <meta name="author" content="Haby Ndom">
-  <title>Haby Ndom | Développeuse Web & Logiciel</title>
+  <title>Accueil | Développeuse Web &amp; Logiciel | Haby Ndom</title>
   
   <!-- Polices Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,6 @@
 </head>
 <body>
   <div class="site-shell">
-    <!-- EN-TÊTE DU SITE -->
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Page d'accueil de Haby Ndom">
         <span class="brand-mark">HN</span>
@@ -27,7 +26,7 @@
         </div>
       </a>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu de navigation">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
         <span></span>
         <span></span>
         <span></span>
@@ -35,12 +34,11 @@
 
       <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
         <a class="active" href="index.html">Accueil</a>
-        <a href="#projet-recrutement">Projet Recrutement</a>
-        <a href="pages/projets.html">Tous les Projets</a>
-        <a href="#competences">Compétences</a>
-        <a href="#transversales">Soft Skills</a>
-        <a href="pages/apropos.html">À propos</a>
-        <a href="pages/contact.html" class="nav-cta">Me contacter <span>↗</span></a>
+        <a class="" href="pages/projets.html">Projets</a>
+        <a href="index.html#competences">Compétences</a>
+        <a href="index.html#transversales">Soft Skills</a>
+        <a class="" href="pages/apropos.html">À propos</a>
+        <a class="nav-cta" href="pages/contact.html">Me contacter <span>↗</span></a>
         <button class="theme-toggle" type="button" aria-label="Basculer le mode sombre" title="Basculer le mode sombre">🌙</button>
       </nav>
     </header>
@@ -95,25 +93,22 @@
         <!-- VISUEL HÉRO AVEC L'IMAGE DE L'UTILISATRICE -->
         <div class="hero-visual reveal reveal-delay-1">
           <div class="photo-card-wrapper">
-            <!-- Badge flottant haut -->
             <div class="floating-pill floating-top">
               <span>⚡</span>
               <span>Code &amp; Architecture</span>
             </div>
 
-            <!-- Carte photo avec l'image fournie par l'utilisatrice -->
             <div class="photo-card">
               <img src="images/haby-dev.jpg" alt="Haby Ndom concentrée sur son ordinateur portable lors d'une session de développement" width="390" height="520">
               <div class="photo-badge">
                 <div>
-                  <div class="photo-badge-name">Haby NDOM</div>
+                  <div class="photo-badge-name">Haby Ndom</div>
                   <div class="photo-badge-title">Développeuse Web &amp; Logiciel</div>
                 </div>
                 <span class="status-indicator"></span>
               </div>
             </div>
 
-            <!-- Badge flottant bas -->
             <div class="floating-pill floating-bottom">
               <span>🛡️</span>
               <span>Sécurité, SQL &amp; Rigueur</span>
@@ -136,14 +131,11 @@
           <span>RÉSEAUX &amp; PROTOCOLE HTTP/HTTPS <i>✦</i></span>
           <span>DÉVELOPPEMENT WEB MODERNE <i>✦</i></span>
           <span>PHP 8 &amp; ARCHITECTURE MVC <i>✦</i></span>
-          <span>SÉCURITÉ WEB (CSRF · BCRYPT · REQUÊTES PRÉPARÉES) <i>✦</i></span>
-          <span>JAVASCRIPT ES6+ <i>✦</i></span>
-          <span>MODÉLISATION RELATIONNELLE &amp; MYSQL <i>✦</i></span>
         </div>
       </section>
 
       <!-- SECTION PROJET VEDETTE : PLATEFORME DE RECRUTEMENT ESCOA -->
-      <section class="featured-project-section section-wrap reveal" id="projet-recrutement">
+            <section class="featured-project-section section-wrap reveal" id="projet-recrutement">
         <div class="section-kicker">
           01 <span></span> Projet Phare &amp; Réalisation Majeure
         </div>
@@ -151,42 +143,48 @@
         <div class="featured-card">
           <div class="featured-body">
             <div>
-              <span class="featured-tag">★ Projet Vedette · Application Full-Stack</span>
+              <span class="featured-tag">★ Projet Vedette · Full-Stack &amp; Sécurité</span>
               <h3>Plateforme de Recrutement — ESCOA</h3>
               <p class="featured-desc">
-                Système web complet de gestion du recrutement universitaire conçu pour moderniser le processus d'embauche des enseignants et intervenants. L'application gère l'intégralité du cycle de recrutement, depuis la publication des postes jusqu'à la sélection finale, avec une haute exigence en matière de sécurité et d'intégrité des données.
-              </p>
+                Système web complet de gestion du recrutement universitaire conçu pour moderniser le processus d&#039;embauche des enseignants et intervenants. L&#039;application gère l&#039;intégralité du cycle de recrutement avec une haute exigence de sécurité et d&#039;intégrité des données.              </p>
 
-              <!-- Points forts du projet -->
+              <!-- Points forts générés en PHP -->
               <div class="featured-highlights">
-                <div class="highlight-item">
-                  <strong>🔒 Sécurité de Niveau Production</strong>
-                  <span>Requêtes préparées PDO contre injections SQL, jetons CSRF systématiques, mots de passe hachés en Bcrypt, limitation anti force brute.</span>
-                </div>
-                <div class="highlight-item">
-                  <strong>📁 Gestion Documentaire Sécurisée</strong>
-                  <span>Vérification stricte du type MIME réel des CV/diplômes déposés, blocage de l'exécution de code dans les uploads via <code>.htaccess</code>.</span>
-                </div>
-                <div class="highlight-item">
-                  <strong>👥 Double Espace Métier</strong>
-                  <span>Espace candidat (création de profil, suivi de dossier en direct) et Espace recruteur (tableaux de bord, annotations, workflow d'évaluation).</span>
-                </div>
-                <div class="highlight-item">
-                  <strong>🔎 Moteur de Filtrage Multi-Critères</strong>
-                  <span>Recherche instantanée d'offres par filière, module de cours, niveau académique et type de contrat horaire ou permanent.</span>
-                </div>
-              </div>
+                                  <div class="highlight-item">
+                    <strong>Sécurité de Niveau Production</strong>
+                    <span>Requêtes préparées PDO contre injections SQL, jetons CSRF systématiques, mots de passe hachés en Bcrypt, limitation anti force brute.</span>
+                  </div>
+                                  <div class="highlight-item">
+                    <strong>Gestion Documentaire Sécurisée</strong>
+                    <span>Vérification stricte du type MIME réel des CV/diplômes déposés, blocage de l&#039;exécution de code dans les uploads via .htaccess.</span>
+                  </div>
+                                  <div class="highlight-item">
+                    <strong>Double Espace Métier</strong>
+                    <span>Espace candidat (création de profil, suivi de dossier en direct) et Espace recruteur (tableaux de bord, annotations, workflow d&#039;évaluation).</span>
+                  </div>
+                                  <div class="highlight-item">
+                    <strong>Moteur de Filtrage Multi-Critères</strong>
+                    <span>Recherche instantanée d&#039;offres par filière, module de cours, niveau académique et type de contrat horaire ou permanent.</span>
+                  </div>
+                              </div>
 
               <!-- Tags technologies -->
               <div class="tech-pills-row">
-                <span class="tech-pill accent">PHP 8</span>
-                <span class="tech-pill accent">MySQL / PDO</span>
-                <span class="tech-pill">Architecture MVC / Modulaire</span>
-                <span class="tech-pill">Sécurité Web (CSRF / Bcrypt)</span>
-                <span class="tech-pill">JavaScript ES6+</span>
-                <span class="tech-pill">HTML5 &amp; CSS3 Responsive</span>
-                <span class="tech-pill">Apache (.htaccess)</span>
-              </div>
+                                  <span class="tech-pill accent">
+                    PHP 8                  </span>
+                                  <span class="tech-pill accent">
+                    MySQL / PDO                  </span>
+                                  <span class="tech-pill ">
+                    Architecture MVC                  </span>
+                                  <span class="tech-pill ">
+                    Sécurité CSRF &amp; Bcrypt                  </span>
+                                  <span class="tech-pill ">
+                    Validation MIME                  </span>
+                                  <span class="tech-pill ">
+                    JavaScript ES6+                  </span>
+                                  <span class="tech-pill ">
+                    Apache (.htaccess)                  </span>
+                              </div>
             </div>
 
             <!-- Actions sur le projet de recrutement -->
@@ -202,7 +200,6 @@
             </div>
           </div>
 
-          <!-- Visuel du projet recrutement -->
           <div class="featured-visual">
             <span class="featured-badge-overlay">Recrutement Universitaire</span>
             <img src="images/logo-recrutement.svg" alt="Illustration de la Plateforme de Recrutement ESCOA" width="340" height="200">
@@ -223,95 +220,84 @@
         </div>
 
         <div class="project-grid">
-          <!-- Carte Projet 1 : Qsen -->
-          <article class="project-card">
-            <div class="project-thumbnail" style="background-color: #e6f4ea;">
-              <span class="project-category-badge">E-Commerce</span>
-              <img src="images/logo-qsen.svg" alt="Logo de la boutique Qsen" width="220" height="120">
-            </div>
-            <div class="project-card-content">
-              <div>
-                <h3>Qsen — Quincaillerie Digitale</h3>
-                <p>
-                  Boutique en ligne spécialisée dans les matériaux et l'outillage. Interface ergonomique pensée pour simplifier la sélection des articles, la constitution du panier et la commande en contexte local.
-                </p>
-                <div class="tech-pills-row">
-                  <span class="tech-pill">HTML5</span>
-                  <span class="tech-pill">CSS3 Grid</span>
-                  <span class="tech-pill">JavaScript</span>
-                  <span class="tech-pill">E-Commerce</span>
+                      <article class="project-card">
+              <div class="project-thumbnail" style="background-color: #e6f4ea;">
+                <span class="project-category-badge">E-Commerce</span>
+                                  <img src="images/logo-qsen.svg" alt="Logo Qsen — Quincaillerie Digitale" width="220" height="120">
+                              </div>
+              <div class="project-card-content">
+                <div>
+                  <h3>Qsen — Quincaillerie Digitale</h3>
+                  <p>Boutique en ligne spécialisée dans les matériaux et l&#039;outillage. Interface ergonomique pensée pour simplifier la sélection des articles, la constitution du panier et la commande en contexte local.</p>
+                  <div class="tech-pills-row">
+                                          <span class="tech-pill">HTML5</span>
+                                          <span class="tech-pill">CSS3 Grid</span>
+                                          <span class="tech-pill">JavaScript</span>
+                                          <span class="tech-pill">Panier Dynamique</span>
+                                      </div>
+                </div>
+                <div class="project-card-footer">
+                                      <span class="text-muted" style="font-size: 0.78rem;">Boutique en ligne</span>
+                                    <a class="project-card-link" href="pages/projets.html#qsen">
+                    Détails <span>→</span>
+                  </a>
                 </div>
               </div>
-              <div class="project-card-footer">
-                <span class="text-muted" style="font-size: 0.78rem;">Projet Web</span>
-                <a class="project-card-link" href="pages/projets.html#qsen">
-                  Détails du projet <span>↗</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Carte Projet 2 : LAAWOL -->
-          <article class="project-card">
-            <div class="project-thumbnail" style="background-color: #fef3c7;">
-              <span class="project-category-badge">Transport &amp; Mobilité</span>
-              <img src="images/logo-laawol.svg" alt="Logo du service Laawol" width="220" height="120">
-            </div>
-            <div class="project-card-content">
-              <div>
-                <h3>LAAWOL — Fouta ↔ AIBD / Dakar</h3>
-                <p>
-                  Plateforme digitale de réservation et de transport interurbain reliant le Fouta à l'Aéroport International Blaise Diagne et à la capitale. Organisation des trajets, tarification claire et planification de voyage.
-                </p>
-                <div class="tech-pills-row">
-                  <span class="tech-pill">JavaScript</span>
-                  <span class="tech-pill">Responsive Design</span>
-                  <span class="tech-pill">UX Thinking</span>
-                  <span class="tech-pill">Services</span>
+            </article>
+                      <article class="project-card">
+              <div class="project-thumbnail" style="background-color: #fef3c7;">
+                <span class="project-category-badge">Transport &amp; Mobilité</span>
+                                  <img src="images/logo-laawol.svg" alt="Logo LAAWOL — Mobilité Fouta ↔ AIBD / Dakar" width="220" height="120">
+                              </div>
+              <div class="project-card-content">
+                <div>
+                  <h3>LAAWOL — Mobilité Fouta ↔ AIBD / Dakar</h3>
+                  <p>Plateforme digitale facilitant la réservation de trajets interurbains reliant la région du Fouta à l&#039;aéroport international Blaise Diagne et à Dakar. Structuration des itinéraires, tarification claire et planification de voyage.</p>
+                  <div class="tech-pills-row">
+                                          <span class="tech-pill">JavaScript</span>
+                                          <span class="tech-pill">Responsive Design</span>
+                                          <span class="tech-pill">UX Thinking</span>
+                                          <span class="tech-pill">Services</span>
+                                      </div>
+                </div>
+                <div class="project-card-footer">
+                                      <span class="text-muted" style="font-size: 0.78rem;">Mobilité &amp; Services</span>
+                                    <a class="project-card-link" href="pages/projets.html#fouta">
+                    Détails <span>→</span>
+                  </a>
                 </div>
               </div>
-              <div class="project-card-footer">
-                <span class="text-muted" style="font-size: 0.78rem;">Mobilité</span>
-                <a class="project-card-link" href="pages/projets.html#fouta">
-                  Détails du projet <span>↗</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Carte Projet 3 : SenQuiz -->
-          <article class="project-card">
-            <div class="project-thumbnail" style="background-color: #e0f2fe;">
-              <span class="project-category-badge">Éducation &amp; Culture</span>
-              <img src="images/logo-senquiz.svg" alt="Logo de SenQuiz" width="220" height="120">
-            </div>
-            <div class="project-card-content">
-              <div>
-                <h3>SenQuiz — Culture &amp; Savoir</h3>
-                <p>
-                  Application web interactive de questions-réponses pour valoriser le patrimoine, l'histoire et la culture sénégalaise. Gestion dynamique des scores, timer interactif et feedback d'apprentissage ludique.
-                </p>
-                <div class="tech-pills-row">
-                  <span class="tech-pill">JavaScript ES6</span>
-                  <span class="tech-pill">DOM Dynamique</span>
-                  <span class="tech-pill">UI Design</span>
-                  <span class="tech-pill">GitHub</span>
+            </article>
+                      <article class="project-card">
+              <div class="project-thumbnail" style="background-color: #e0f2fe;">
+                <span class="project-category-badge">Éducation &amp; Culture</span>
+                                  <img src="images/logo-senquiz.svg" alt="Logo SenQuiz — Quiz Culturel Sénégalais" width="220" height="120">
+                              </div>
+              <div class="project-card-content">
+                <div>
+                  <h3>SenQuiz — Quiz Culturel Sénégalais</h3>
+                  <p>Application web interactive ludique pour valoriser le patrimoine, l&#039;histoire et la culture sénégalaise. Moteur de questions dynamiques, chronomètre interactif, calcul de score et restitution pédagogique.</p>
+                  <div class="tech-pills-row">
+                                          <span class="tech-pill">JavaScript ES6+</span>
+                                          <span class="tech-pill">Manipulation DOM</span>
+                                          <span class="tech-pill">Animations CSS</span>
+                                          <span class="tech-pill">Gamification</span>
+                                      </div>
+                </div>
+                <div class="project-card-footer">
+                                      <a class="project-card-link" href="https://github.com/HabyNdom/QuizSenCulture" target="_blank" rel="noopener noreferrer">
+                      Code GitHub <span>↗</span>
+                    </a>
+                                    <a class="project-card-link" href="pages/projets.html#senquiz">
+                    Détails <span>→</span>
+                  </a>
                 </div>
               </div>
-              <div class="project-card-footer">
-                <a class="project-card-link" href="https://github.com/HabyNdom/QuizSenCulture" target="_blank" rel="noopener noreferrer">
-                  Code GitHub <span>↗</span>
-                </a>
-                <a class="project-card-link" href="pages/projets.html#senquiz">
-                  En savoir plus <span>→</span>
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
+            </article>
+                  </div>
       </section>
 
-      <!-- SECTION COMPÉTENCES TECHNIQUES APPROFONDIES (SANS REACT NI NODE.JS) -->
+      <!-- SECTION COMPÉTENCES TECHNIQUES (SANS REACT NI NODE.JS) -->
       <section class="skills-section reveal" id="competences">
         <div class="section-wrap">
           <div class="skills-intro">
@@ -323,211 +309,170 @@
           </div>
 
           <div class="skills-grid-categories">
-            <!-- Pôle 1 : Langages & Fondamentaux du Web -->
-            <div class="skill-category-card">
-              <div class="category-header">
-                <div class="category-icon">🌐</div>
-                <div>
-                  <h3>Langages &amp; Web Fondamental</h3>
-                  <p>Normes W3C, logique client-serveur et programmation moderne</p>
+                          <div class="skill-category-card">
+                <div class="category-header">
+                  <div class="category-icon">🌐</div>
+                  <div>
+                    <h3>Langages &amp; Web Fondamental</h3>
+                    <p>Normes W3C, logique client-serveur et programmation moderne</p>
+                  </div>
                 </div>
+                <div class="skills-list-detailed">
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>HTML5 Sémantique &amp; Accessibilité (a11y)</strong>
+                        <span class="skill-level-tag">Avancé</span>
+                      </div>
+                      <p class="skill-detail-desc">Structure sémantique irréprochable, balises ARIA, SEO on-page, conformité WCAG.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>CSS3 Moderne, Flexbox &amp; CSS Grid</strong>
+                        <span class="skill-level-tag">Avancé</span>
+                      </div>
+                      <p class="skill-detail-desc">Mise en page complexe, Custom Properties (variables CSS), Responsive Mobile-First, animations fluides.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>JavaScript ES6+ Moderne</strong>
+                        <span class="skill-level-tag">Maîtrisé</span>
+                      </div>
+                      <p class="skill-detail-desc">Manipulation avancée du DOM, programmation asynchrone (Fetch, Promises, async/await), architecture modulaire, POO.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>PHP 8 &amp; Côté Serveur (Backend)</strong>
+                        <span class="skill-level-tag">Maîtrisé</span>
+                      </div>
+                      <p class="skill-detail-desc">Programmation Orientée Objet (POO), gestion rigoureuse des sessions, authentification, routage et séparation MVC.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Python</strong>
+                        <span class="skill-level-tag">Fondamentaux</span>
+                      </div>
+                      <p class="skill-detail-desc">Structures de données, logique algorithmique, traitement de fichiers et scripting d&#039;automatisation.</p>
+                    </div>
+                                  </div>
               </div>
-              <div class="skills-list-detailed">
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>HTML5 Sémantique &amp; Accessibilité (a11y)</strong>
-                    <span class="skill-level-tag">Avancé</span>
+                          <div class="skill-category-card">
+                <div class="category-header">
+                  <div class="category-icon">🗄️</div>
+                  <div>
+                    <h3>Bases de Données &amp; Persistance</h3>
+                    <p>Modélisation relationnelle, intégrité et requêtes optimisées</p>
                   </div>
-                  <p class="skill-detail-desc">
-                    Structure sémantique irréprochable, balises ARIA, SEO on-page, conformité WCAG pour une accessibilité tous publics.
-                  </p>
                 </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>CSS3 Moderne, Flexbox &amp; CSS Grid</strong>
-                    <span class="skill-level-tag">Avancé</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Mise en page complexe, Custom Properties (variables CSS), Responsive Mobile-First, animations fluides sans dépendance lourde.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>JavaScript ES6+ Moderne</strong>
-                    <span class="skill-level-tag">Maîtrisé</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Manipulation avancée du DOM, programmation asynchrone (Fetch, Promises, async/await), architecture modulaire, POO en JS.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>PHP 8 &amp; Côté Serveur (Backend)</strong>
-                    <span class="skill-level-tag">Maîtrisé</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Programmation Orientée Objet (POO), gestion rigoureuse des sessions, authentification, routage et séparation logique/vue.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Python</strong>
-                    <span class="skill-level-tag">Fondamentaux</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Structures de données, logique algorithmique, traitement de fichiers et scripting d'automatisation.
-                  </p>
-                </div>
+                <div class="skills-list-detailed">
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Modélisation Relationnelle (MCD / MLD)</strong>
+                        <span class="skill-level-tag">Maîtrisé</span>
+                      </div>
+                      <p class="skill-detail-desc">Conception de schémas de bases de données normalisés (1NF à 3NF), intégrité référentielle, clés primaires/étrangères.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>SQL, MySQL &amp; MariaDB</strong>
+                        <span class="skill-level-tag">Avancé</span>
+                      </div>
+                      <p class="skill-detail-desc">Requêtes complexes, jointures (INNER/LEFT), agrégations, indexation, sous-requêtes et gestion phpMyAdmin/CLI.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Requêtes Préparées &amp; PDO</strong>
+                        <span class="skill-level-tag">Avancé</span>
+                      </div>
+                      <p class="skill-detail-desc">Sécurisation totale des accès aux données via PDO, élimination systématique des vulnérabilités d&#039;injection SQL.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Transactions &amp; Intégrité ACID</strong>
+                        <span class="skill-level-tag">Appliqué</span>
+                      </div>
+                      <p class="skill-detail-desc">Préservation de la cohérence des données lors d&#039;opérations multi-tables (inscriptions, candidatures, commandes).</p>
+                    </div>
+                                  </div>
               </div>
-            </div>
-
-            <!-- Pôle 2 : Données & Persistance -->
-            <div class="skill-category-card">
-              <div class="category-header">
-                <div class="category-icon">🗄️</div>
-                <div>
-                  <h3>Bases de Données &amp; Persistance</h3>
-                  <p>Modélisation relationnelle, intégrité et requêtes optimisées</p>
+                          <div class="skill-category-card">
+                <div class="category-header">
+                  <div class="category-icon">🛡️</div>
+                  <div>
+                    <h3>Architecture, Sécurité &amp; Qualité</h3>
+                    <p>Conception robuste, protection des données et maintenabilité</p>
+                  </div>
                 </div>
+                <div class="skills-list-detailed">
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Architecture MVC &amp; Modulaire</strong>
+                        <span class="skill-level-tag">Maîtrisé</span>
+                      </div>
+                      <p class="skill-detail-desc">Découpage net des responsabilités : logique métier séparée du rendu HTML et de l&#039;accès aux bases de données.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Sécurité Web Fondamentale</strong>
+                        <span class="skill-level-tag">Renforcé</span>
+                      </div>
+                      <p class="skill-detail-desc">Protection anti-CSRF (tokens uniques), hachage Bcrypt, assainissement XSS (htmlspecialchars), limitation anti brute force.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Validation Stricte des Fichiers (MIME)</strong>
+                        <span class="skill-level-tag">Appliqué</span>
+                      </div>
+                      <p class="skill-detail-desc">Vérification du contenu binaire réel des documents téléversés et verrouillage d&#039;exécution par .htaccess.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Clean Code &amp; Principes DRY / KISS</strong>
+                        <span class="skill-level-tag">Standard</span>
+                      </div>
+                      <p class="skill-detail-desc">Code lisible, documenté, fonctions à responsabilité unique et convention de nommage claire.</p>
+                    </div>
+                                  </div>
               </div>
-              <div class="skills-list-detailed">
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Modélisation Relationnelle (MCD / MLD)</strong>
-                    <span class="skill-level-tag">Maîtrisé</span>
+                          <div class="skill-category-card">
+                <div class="category-header">
+                  <div class="category-icon">⚙️</div>
+                  <div>
+                    <h3>Outils, Systèmes &amp; Réseaux</h3>
+                    <p>Environnement de travail professionnel et workflow moderne</p>
                   </div>
-                  <p class="skill-detail-desc">
-                    Conception de schémas de bases de données normalisés (1NF à 3NF), intégrité référentielle, clés primaires et étrangères.
-                  </p>
                 </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>SQL, MySQL &amp; MariaDB</strong>
-                    <span class="skill-level-tag">Avancé</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Requêtes complexes, jointures (INNER/LEFT), agrégations, indexation, sous-requêtes et gestion via phpMyAdmin &amp; CLI.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Requêtes Préparées &amp; PDO</strong>
-                    <span class="skill-level-tag">Avancé</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Sécurisation totale des accès aux données via PDO, élimination systématique des vulnérabilités d'injection SQL.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Transactions &amp; Intégrité ACID</strong>
-                    <span class="skill-level-tag">Appliqué</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Préservation de la cohérence des données lors d'opérations multi-tables (inscriptions, candidatures, commandes).
-                  </p>
-                </div>
+                <div class="skills-list-detailed">
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Git &amp; GitHub (Version Control)</strong>
+                        <span class="skill-level-tag">Maîtrisé</span>
+                      </div>
+                      <p class="skill-detail-desc">Gestion de versions, branches de fonctionnalités, commits explicites, résolution de conflits et collaboration.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Ligne de Commande &amp; Terminal (CLI)</strong>
+                        <span class="skill-level-tag">Maîtrisé</span>
+                      </div>
+                      <p class="skill-detail-desc">Environnements PowerShell et Bash sous Linux, manipulation de fichiers, gestion des permissions et scripts shell.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Serveurs Locaux &amp; Apache (XAMPP / LAMP)</strong>
+                        <span class="skill-level-tag">Maîtrisé</span>
+                      </div>
+                      <p class="skill-detail-desc">Configuration d&#039;hôtes locaux, modules de réécriture Apache, virtualisation et environnements de test isolés.</p>
+                    </div>
+                                      <div class="skill-detail-item">
+                      <div class="skill-detail-top">
+                        <strong>Réseaux &amp; Protocoles Web</strong>
+                        <span class="skill-level-tag">Acquis</span>
+                      </div>
+                      <p class="skill-detail-desc">Fonctionnement HTTP/HTTPS, codes d&#039;état, modèle OSI, adressage IP, DNS et simulation Cisco Packet Tracer.</p>
+                    </div>
+                                  </div>
               </div>
-            </div>
-
-            <!-- Pôle 3 : Architecture, Qualité & Sécurité -->
-            <div class="skill-category-card">
-              <div class="category-header">
-                <div class="category-icon">🛡️</div>
-                <div>
-                  <h3>Architecture, Sécurité &amp; Qualité</h3>
-                  <p>Conception robuste, protection des données et maintenabilité</p>
-                </div>
-              </div>
-              <div class="skills-list-detailed">
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Architecture MVC &amp; Modulaire</strong>
-                    <span class="skill-level-tag">Maîtrisé</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Découpage net des responsabilités : logique métier séparée du rendu HTML et de l'accès aux bases de données.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Sécurité Web Fondamentale</strong>
-                    <span class="skill-level-tag">Renforcé</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Protection anti-CSRF (tokens uniques), hachage cryptographique Bcrypt, assainissement XSS (htmlspecialchars), limitation anti brute force.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Validation Stricte des Fichiers (MIME)</strong>
-                    <span class="skill-level-tag">Appliqué</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Vérification du contenu binaire réel des documents téléversés et verrouillage d'exécution de scripts par <code>.htaccess</code>.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Clean Code &amp; Principes DRY / KISS</strong>
-                    <span class="skill-level-tag">Standard</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Code lisible, documenté, fonctions à responsabilité unique et convention de nommage claire.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pôle 4 : Outils Développeur, Systèmes & Réseaux -->
-            <div class="skill-category-card">
-              <div class="category-header">
-                <div class="category-icon">⚙️</div>
-                <div>
-                  <h3>Outils, Systèmes &amp; Réseaux</h3>
-                  <p>Environnement de travail professionnel et workflow moderne</p>
-                </div>
-              </div>
-              <div class="skills-list-detailed">
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Git &amp; GitHub (Version Control)</strong>
-                    <span class="skill-level-tag">Maîtrisé</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Gestion de versions, branches de fonctionnalités, commits explicites, résolution de conflits et publication GitHub Pages.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Ligne de Commande &amp; Terminal (CLI)</strong>
-                    <span class="skill-level-tag">Maîtrisé</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Environnements PowerShell et Bash sous Linux, manipulation de fichiers, gestion des permissions et scripts shell.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Serveurs Locaux &amp; Apache (XAMPP / LAMP)</strong>
-                    <span class="skill-level-tag">Maîtrisé</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Configuration d'hôtes locaux, modules de réécriture Apache, virtualisation et environnements de test isolés.
-                  </p>
-                </div>
-                <div class="skill-detail-item">
-                  <div class="skill-detail-top">
-                    <strong>Réseaux &amp; Protocoles Web</strong>
-                    <span class="skill-level-tag">Acquis</span>
-                  </div>
-                  <p class="skill-detail-desc">
-                    Fonctionnement du protocole HTTP/HTTPS, codes d'état, modèle OSI, adressage IP, DNS et bases de simulation Cisco Packet Tracer.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                      </div>
         </div>
       </section>
 
@@ -542,78 +487,49 @@
         </div>
 
         <div class="transversal-grid">
-          <!-- Soft Skill 1 -->
-          <article class="transversal-card">
-            <span class="transversal-icon">🧠</span>
-            <h3>Résolution Méthodique de Problèmes</h3>
-            <p>
-              Face à un bug ou une exigence technique complexe, j'adopte une démarche analytique : décomposition du problème en sous-composants, isolation des anomalies et validation rigoureuse des solutions.
-            </p>
-            <div class="transversal-application">
-              <span>✓</span> Appliqué au durcissement sécuritaire de la plateforme ESCOA
-            </div>
-          </article>
-
-          <!-- Soft Skill 2 -->
-          <article class="transversal-card">
-            <span class="transversal-icon">🎯</span>
-            <h3>Rigueur &amp; Sens du Détail</h3>
-            <p>
-              Attachement profond à la qualité du code produit : respect des standards, gestion préventive des cas d'erreur (edge cases) et finitions soignées tant sur le plan visuel que fonctionnel.
-            </p>
-            <div class="transversal-application">
-              <span>✓</span> Validation des entrées formulaires et protection MIME
-            </div>
-          </article>
-
-          <!-- Soft Skill 3 -->
-          <article class="transversal-card">
-            <span class="transversal-icon">🚀</span>
-            <h3>Autonomie &amp; Apprentissage Continu</h3>
-            <p>
-              Grande curiosité intellectuelle et capacité d'auto-formation rapide. Je consulte directement la documentation officielle pour assimiler de nouveaux concepts et résoudre des blocages en autonomie.
-            </p>
-            <div class="transversal-application">
-              <span>✓</span> Auto-apprentissage continu et veille technologique
-            </div>
-          </article>
-
-          <!-- Soft Skill 4 -->
-          <article class="transversal-card">
-            <span class="transversal-icon">💬</span>
-            <h3>Communication Claire &amp; Écoute</h3>
-            <p>
-              Aptitude à dialoguer avec des interlocuteurs non techniques pour traduire leurs besoins métiers en spécifications fonctionnelles claires, et rendre compte de l'avancement avec transparence.
-            </p>
-            <div class="transversal-application">
-              <span>✓</span> Rédaction de documentations techniques et cahiers des charges
-            </div>
-          </article>
-
-          <!-- Soft Skill 5 -->
-          <article class="transversal-card">
-            <span class="transversal-icon">🤝</span>
-            <h3>Esprit d'Équipe &amp; Collaboration</h3>
-            <p>
-              Sens du travail collectif, esprit d'entraide, réceptivité aux retours constructifs et utilisation méthodique des outils de collaboration (Git, revues de code, planification par jalons).
-            </p>
-            <div class="transversal-application">
-              <span>✓</span> Gestion collaborative de versions sous GitHub
-            </div>
-          </article>
-
-          <!-- Soft Skill 6 -->
-          <article class="transversal-card">
-            <span class="transversal-icon">📈</span>
-            <h3>Sens du Produit &amp; Vision Métier</h3>
-            <p>
-              Ma double sensibilité en développement web et commerce digital me permet de ne jamais perdre de vue la finalité du logiciel : offrir une expérience fluide qui sert les objectifs économiques et réels.
-            </p>
-            <div class="transversal-application">
-              <span>✓</span> Conception de parcours e-commerce et tunnels de conversion
-            </div>
-          </article>
-        </div>
+                      <article class="transversal-card">
+              <span class="transversal-icon">🧠</span>
+              <h3>Résolution Méthodique de Problèmes</h3>
+              <p>Face à un bug ou une exigence technique complexe, j&#039;adopte une démarche analytique : décomposition du problème en sous-composants, isolation des anomalies et validation rigoureuse des solutions.</p>
+              <div class="transversal-application">
+                <span>✓</span> Appliqué au durcissement sécuritaire de la plateforme ESCOA              </div>
+            </article>
+                      <article class="transversal-card">
+              <span class="transversal-icon">🎯</span>
+              <h3>Rigueur &amp; Sens du Détail</h3>
+              <p>Attachement profond à la qualité du code produit : respect des standards, gestion préventive des cas d&#039;erreur (edge cases) et finitions soignées tant sur le plan visuel que fonctionnel.</p>
+              <div class="transversal-application">
+                <span>✓</span> Validation des entrées formulaires et protection MIME              </div>
+            </article>
+                      <article class="transversal-card">
+              <span class="transversal-icon">🚀</span>
+              <h3>Autonomie &amp; Apprentissage Continu</h3>
+              <p>Grande curiosité intellectuelle et capacité d&#039;auto-formation rapide. Je consulte directement la documentation officielle pour assimiler de nouveaux concepts et résoudre des blocages en autonomie.</p>
+              <div class="transversal-application">
+                <span>✓</span> Auto-apprentissage continu et veille technologique              </div>
+            </article>
+                      <article class="transversal-card">
+              <span class="transversal-icon">💬</span>
+              <h3>Communication Claire &amp; Écoute</h3>
+              <p>Aptitude à dialoguer avec des interlocuteurs non techniques pour traduire leurs besoins métiers en spécifications fonctionnelles claires, et rendre compte de l&#039;avancement avec transparence.</p>
+              <div class="transversal-application">
+                <span>✓</span> Rédaction de documentations techniques et cahiers des charges              </div>
+            </article>
+                      <article class="transversal-card">
+              <span class="transversal-icon">🤝</span>
+              <h3>Esprit d&#039;Équipe &amp; Collaboration</h3>
+              <p>Sens du travail collectif, esprit d&#039;entraide, réceptivité aux retours constructifs et utilisation méthodique des outils de collaboration (Git, revues de code, planification par jalons).</p>
+              <div class="transversal-application">
+                <span>✓</span> Gestion collaborative de versions sous GitHub              </div>
+            </article>
+                      <article class="transversal-card">
+              <span class="transversal-icon">📈</span>
+              <h3>Sens du Produit &amp; Vision Métier</h3>
+              <p>Ma double sensibilité en développement web et commerce digital me permet de ne jamais perdre de vue la finalité du logiciel : offrir une expérience fluide qui sert les objectifs économiques et réels.</p>
+              <div class="transversal-application">
+                <span>✓</span> Conception de parcours e-commerce et tunnels de conversion              </div>
+            </article>
+                  </div>
       </section>
 
       <!-- SECTION APERÇU À PROPOS -->
@@ -676,7 +592,6 @@
       </section>
     </main>
 
-    <!-- PIED DE PAGE -->
     <footer class="site-footer">
       <div class="section-wrap footer-content">
         <div>
@@ -685,13 +600,11 @@
             <span>Haby.Ndom</span>
           </a>
           <p style="margin-top: 0.4rem; font-size: 0.8rem;">
-            Développeuse Web &amp; Logiciel · Dakar, Sénégal
-          </p>
+            Développeuse Web &amp; Logiciel · Dakar, Sénégal          </p>
         </div>
 
         <p>
-          Conçu &amp; développé avec passion par Haby Ndom · <span class="current-year">2026</span>
-        </p>
+          Conçu &amp; développé avec PHP, HTML, CSS &amp; JS par Haby Ndom · 2026        </p>
 
         <div class="footer-links">
           <a href="https://github.com/HabyNdom" target="_blank" rel="noopener noreferrer">GitHub</a>

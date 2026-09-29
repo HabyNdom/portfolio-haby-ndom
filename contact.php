@@ -1,47 +1,17 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contactez Haby Ndom, Développeuse Web &amp; Logiciel à Dakar, pour discuter d&#039;opportunités de stage, d&#039;alternance ou de projets web.">
-  <meta name="author" content="Haby Ndom">
-  <title>Contact | Haby Ndom</title>
-  
-  <!-- Polices Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/main.js" defer></script>
-</head>
-<body>
-  <div class="site-shell">
-    <header class="site-header">
-      <a class="brand" href="../index.html" aria-label="Page d'accueil de Haby Ndom">
-        <span class="brand-mark">HN</span>
-        <div>
-          <span>Haby<span class="brand-dot">.</span>Ndom</span>
-          <span class="brand-role">Développeuse Web</span>
-        </div>
-      </a>
+<?php
+require_once __DIR__ . '/includes/config.php';
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+$page_title = 'Contact';
+$page_active = 'contact';
+$page_desc = 'Contactez Haby Ndom, Développeuse Web & Logiciel à Dakar, pour discuter d\'opportunités de stage, d\'alternance ou de projets web.';
+$base_path = '';
 
-      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
-        <a class="" href="../index.html">Accueil</a>
-        <a class="" href="projets.html">Projets</a>
-        <a href="../index.html#competences">Compétences</a>
-        <a href="../index.html#transversales">Soft Skills</a>
-        <a class="" href="apropos.html">À propos</a>
-        <a class="active nav-cta" href="contact.html">Me contacter <span>↗</span></a>
-        <button class="theme-toggle" type="button" aria-label="Basculer le mode sombre" title="Basculer le mode sombre">🌙</button>
-      </nav>
-    </header>
+$csrf_token = get_csrf_token();
+$flash_message = $_SESSION['flash_message'] ?? null;
+unset($_SESSION['flash_message']);
+
+include __DIR__ . '/includes/header.php';
+?>
 
     <main>
       <!-- HÉRO DE LA PAGE CONTACT -->
@@ -66,16 +36,16 @@
               <div class="section-kicker">Coordonnées directes</div>
               <h2>Parlons de vos besoins.</h2>
               <p>
-                Basée à <strong>Dakar, Sénégal</strong>, je suis disponible pour des missions en présentiel ou à distance, ainsi que pour un stage ou une alternance d'ingénierie web.
+                Basée à <strong><?= e(SITE_LOCATION) ?></strong>, je suis disponible pour des missions en présentiel ou à distance, ainsi que pour un stage ou une alternance d'ingénierie web.
               </p>
             </div>
 
             <!-- E-mail direct cliquable -->
             <div>
               <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-subtle); display: block; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em;">Adresse e-mail professionnelle</span>
-              <a href="mailto:habyndom01@gmail.com" class="direct-email-box">
+              <a href="mailto:<?= e(SITE_EMAIL) ?>" class="direct-email-box">
                 <span>✉</span>
-                <span>habyndom01@gmail.com</span>
+                <span><?= e(SITE_EMAIL) ?></span>
               </a>
             </div>
 
@@ -83,15 +53,15 @@
             <div>
               <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-subtle); display: block; margin-bottom: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em;">Profils &amp; Répertoires de Code</span>
               <div class="social-links-grid">
-                <a class="social-item" href="https://github.com/HabyNdom" target="_blank" rel="noopener noreferrer">
+                <a class="social-item" href="<?= GITHUB_PROFILE ?>" target="_blank" rel="noopener noreferrer">
                   <span>GitHub (@HabyNdom)</span>
                   <span>↗</span>
                 </a>
-                <a class="social-item" href="https://github.com/HabyNdom/plateforme-recrutement-escoa" target="_blank" rel="noopener noreferrer">
+                <a class="social-item" href="<?= GITHUB_RECRUTEMENT_REPO ?>" target="_blank" rel="noopener noreferrer">
                   <span>Projet Plateforme Recrutement</span>
                   <span>↗</span>
                 </a>
-                <a class="social-item" href="https://fr.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <a class="social-item" href="<?= LINKEDIN_PROFILE ?>" target="_blank" rel="noopener noreferrer">
                   <span>LinkedIn</span>
                   <span>↗</span>
                 </a>
@@ -114,10 +84,15 @@
           <div class="form-card">
             <h2>M'envoyer un message</h2>
 
-            
+            <?php if ($flash_message): ?>
+              <div class="form-status success" style="display: block; margin-bottom: 1.5rem;">
+                <?= e($flash_message) ?>
+              </div>
+            <?php endif; ?>
+
             <form action="traitement-contact.php" method="POST" data-status-target="contact-form-status">
               <!-- Jeton de sécurité anti-CSRF généré en PHP -->
-              <input type="hidden" name="csrf_token" value="5b92e8dd38c3beb16429d665513ba157ce874fa425f415ef74b25dfcc6427bf1">
+              <input type="hidden" name="csrf_token" value="<?= e($csrf_token) ?>">
 
               <div class="form-group">
                 <label for="contact-name">Nom et prénom <span>*</span></label>
@@ -157,27 +132,5 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="section-wrap footer-content">
-        <div>
-          <a class="brand" href="../index.html" style="font-size: 1.1rem;">
-            <span class="brand-mark" style="width: 28px; height: 28px; font-size: 0.65rem;">HN</span>
-            <span>Haby.Ndom</span>
-          </a>
-          <p style="margin-top: 0.4rem; font-size: 0.8rem;">
-            Développeuse Web &amp; Logiciel · Dakar, Sénégal          </p>
-        </div>
-
-        <p>
-          Conçu &amp; développé avec PHP, HTML, CSS &amp; JS par Haby Ndom · 2026        </p>
-
-        <div class="footer-links">
-          <a href="https://github.com/HabyNdom" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://github.com/HabyNdom/plateforme-recrutement-escoa" target="_blank" rel="noopener noreferrer">Projet Recrutement</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
+<?php
+include __DIR__ . '/includes/footer.php';

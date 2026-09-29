@@ -17,9 +17,8 @@
 </head>
 <body>
   <div class="site-shell">
-    <!-- EN-TÊTE DU SITE -->
     <header class="site-header">
-      <a class="brand" href="../index.html" aria-label="Accueil de Haby Ndom">
+      <a class="brand" href="../index.html" aria-label="Page d'accueil de Haby Ndom">
         <span class="brand-mark">HN</span>
         <div>
           <span>Haby<span class="brand-dot">.</span>Ndom</span>
@@ -34,12 +33,12 @@
       </button>
 
       <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
-        <a href="../index.html">Accueil</a>
+        <a class="" href="../index.html">Accueil</a>
         <a class="active" href="projets.html">Projets</a>
         <a href="../index.html#competences">Compétences</a>
         <a href="../index.html#transversales">Soft Skills</a>
-        <a href="apropos.html">À propos</a>
-        <a href="contact.html" class="nav-cta">Me contacter <span>↗</span></a>
+        <a class="" href="apropos.html">À propos</a>
+        <a class="nav-cta" href="contact.html">Me contacter <span>↗</span></a>
         <button class="theme-toggle" type="button" aria-label="Basculer le mode sombre" title="Basculer le mode sombre">🌙</button>
       </nav>
     </header>
@@ -75,212 +74,221 @@
           </div>
         </div>
 
-        <!-- GRILLE DE TOUS LES PROJETS -->
+        <!-- GRILLE DE TOUS LES PROJETS GÉNÉRÉE DYNAMIQUEMENT EN PHP -->
         <div class="full-projects-grid">
           
-          <!-- PROJET 1 : PLATEFORME DE RECRUTEMENT ESCOA (PROJET VEDETTE EN PLEINE LARGEUR) -->
-          <article class="project-item-card project-card-featured-wide featured-card" id="recrutement" data-category="backend app" data-search="plateforme recrutement escoa professeurs enseignement php mysql pdo sql csrf bcrypt mvc apache candidatures">
-            <div class="featured-body">
-              <div>
-                <span class="featured-tag">★ Projet Phare · Full-Stack Web &amp; Sécurité</span>
-                <h3>Plateforme de Recrutement — ESCOA</h3>
-                <p class="featured-desc">
-                  Système d'information et application web complète de gestion des recrutements pour l'enseignement supérieur. Conçue pour remplacer la gestion manuelle par un système automatisé, transparent et sécurisé, assurant le traitement fluide des candidatures de professeurs et vacataires.
-                </p>
+                                    <!-- PROJET PHARE EN PLEINE LARGEUR (PLATEFORME DE RECRUTEMENT) -->
+              <article class="project-item-card project-card-featured-wide featured-card" id="recrutement" data-category="backend app" data-search="plateforme recrutement escoa professeurs enseignement php mysql pdo sql csrf bcrypt mvc apache candidatures">
+                <div class="featured-body">
+                  <div>
+                    <span class="featured-tag">★ Projet Vedette · Full-Stack &amp; Sécurité</span>
+                    <h3>Plateforme de Recrutement — ESCOA</h3>
+                    <p class="featured-desc">Système web complet de gestion du recrutement universitaire conçu pour moderniser le processus d&#039;embauche des enseignants et intervenants. L&#039;application gère l&#039;intégralité du cycle de recrutement avec une haute exigence de sécurité et d&#039;intégrité des données.</p>
 
-                <!-- Spécifications techniques détaillées -->
-                <div class="featured-highlights">
-                  <div class="highlight-item">
-                    <strong>🛡️ Sécurité &amp; Intégrité Applicative</strong>
-                    <span>Requêtes SQL 100% préparées via PDO, hachage bcrypt des mots de passe, tokens CSRF sur tous les formulaires, limitation de débit (5 tentatives / 15 min anti brute-force).</span>
+                    <div class="featured-highlights">
+                                              <div class="highlight-item">
+                          <strong>Sécurité de Niveau Production</strong>
+                          <span>Requêtes préparées PDO contre injections SQL, jetons CSRF systématiques, mots de passe hachés en Bcrypt, limitation anti force brute.</span>
+                        </div>
+                                              <div class="highlight-item">
+                          <strong>Gestion Documentaire Sécurisée</strong>
+                          <span>Vérification stricte du type MIME réel des CV/diplômes déposés, blocage de l&#039;exécution de code dans les uploads via .htaccess.</span>
+                        </div>
+                                              <div class="highlight-item">
+                          <strong>Double Espace Métier</strong>
+                          <span>Espace candidat (création de profil, suivi de dossier en direct) et Espace recruteur (tableaux de bord, annotations, workflow d&#039;évaluation).</span>
+                        </div>
+                                              <div class="highlight-item">
+                          <strong>Moteur de Filtrage Multi-Critères</strong>
+                          <span>Recherche instantanée d&#039;offres par filière, module de cours, niveau académique et type de contrat horaire ou permanent.</span>
+                        </div>
+                                          </div>
+
+                    <div class="tech-pills-row">
+                                              <span class="tech-pill accent">
+                          PHP 8                        </span>
+                                              <span class="tech-pill accent">
+                          MySQL / PDO                        </span>
+                                              <span class="tech-pill ">
+                          Architecture MVC                        </span>
+                                              <span class="tech-pill ">
+                          Sécurité CSRF &amp; Bcrypt                        </span>
+                                              <span class="tech-pill ">
+                          Validation MIME                        </span>
+                                              <span class="tech-pill ">
+                          JavaScript ES6+                        </span>
+                                              <span class="tech-pill ">
+                          Apache (.htaccess)                        </span>
+                                          </div>
                   </div>
-                  <div class="highlight-item">
-                    <strong>📄 Uploads Sécurisés &amp; Protection Serveur</strong>
-                    <span>Vérification de la signature MIME réelle des fichiers PDF déposés (CV, diplômes) et verrouillage strict de l'exécution de scripts grâce à un fichier <code>.htaccess</code> dédié.</span>
+
+                  <div class="featured-actions">
+                                          <a class="button button-primary" href="https://github.com/HabyNdom/plateforme-recrutement-escoa" target="_blank" rel="noopener noreferrer">
+                        <span>Voir le dépôt de code sur GitHub</span>
+                        <span aria-hidden="true">↗</span>
+                      </a>
+                                        <a class="button button-outline" href="contact.html">
+                      <span>Demander une démo technique</span>
+                      <span aria-hidden="true">✉</span>
+                    </a>
                   </div>
-                  <div class="highlight-item">
-                    <strong>🎓 Espace Candidat Complet</strong>
-                    <span>Inscription, gestion détaillée du profil académique, téléversement de justificatifs, postulation en un clic et suivi temps réel de l'état de chaque dossier.</span>
+                </div>
+
+                <div class="featured-visual">
+                  <span class="featured-badge-overlay">Recrutement Universitaire</span>
+                  <img src="../images/logo-recrutement.svg" alt="Aperçu graphique Plateforme de Recrutement — ESCOA" width="340" height="200">
+                </div>
+              </article>
+
+                                                <!-- AUTRES PROJETS -->
+                            <article class="project-item-card project-card" id="qsen" data-category="ecommerce" data-search="qsen boutique quincaillerie e-commerce outils materiaux panier html css javascript">
+                <div class="project-thumbnail" style="background-color: #dcfce7;">
+                  <span class="project-category-badge">E-Commerce</span>
+                                      <img src="../images/logo-qsen.svg" alt="Logo Qsen — Quincaillerie Digitale" width="220" height="120">
+                                  </div>
+
+                <div class="project-card-content">
+                  <div>
+                    <h3>Qsen — Quincaillerie Digitale</h3>
+                    <p>Boutique en ligne spécialisée dans les matériaux et l&#039;outillage. Interface ergonomique pensée pour simplifier la sélection des articles, la constitution du panier et la commande en contexte local.</p>
+                    <div class="tech-pills-row">
+                                              <span class="tech-pill accent">HTML5</span>
+                                              <span class="tech-pill accent">CSS3 Grid</span>
+                                              <span class="tech-pill ">JavaScript</span>
+                                              <span class="tech-pill ">Panier Dynamique</span>
+                                              <span class="tech-pill ">Mobile-First</span>
+                                          </div>
                   </div>
-                  <div class="highlight-item">
-                    <strong>📊 Tableau de Bord Admin &amp; Recruteur</strong>
-                    <span>Statistiques d'embauche en direct, publication et gestion des offres d'enseignement, workflow complet de révision (validation, rejet, mise en attente avec annotations privées).</span>
+
+                  <div class="project-card-footer">
+                                          <span class="text-muted" style="font-size: 0.78rem;">Boutique en ligne</span>
+                    
+                    <a class="project-card-link" href="#qsen">
+                      Détails <span>↓</span>
+                    </a>
                   </div>
                 </div>
+              </article>
+                                                <!-- AUTRES PROJETS -->
+                            <article class="project-item-card project-card" id="fouta" data-category="service" data-search="laawol fouta aibd dakar transport mobilite reservation voiture services trajets voyage">
+                <div class="project-thumbnail" style="background-color: #fef3c7;">
+                  <span class="project-category-badge">Transport &amp; Mobilité</span>
+                                      <img src="../images/logo-laawol.svg" alt="Logo LAAWOL — Mobilité Fouta ↔ AIBD / Dakar" width="220" height="120">
+                                  </div>
 
-                <div class="tech-pills-row">
-                  <span class="tech-pill accent">PHP 8</span>
-                  <span class="tech-pill accent">MySQL / PDO</span>
-                  <span class="tech-pill">Architecture MVC / Modulaire</span>
-                  <span class="tech-pill">Sécurité CSRF &amp; Bcrypt</span>
-                  <span class="tech-pill">Validation MIME</span>
-                  <span class="tech-pill">JavaScript ES6+</span>
-                  <span class="tech-pill">Apache (.htaccess)</span>
+                <div class="project-card-content">
+                  <div>
+                    <h3>LAAWOL — Mobilité Fouta ↔ AIBD / Dakar</h3>
+                    <p>Plateforme digitale facilitant la réservation de trajets interurbains reliant la région du Fouta à l&#039;aéroport international Blaise Diagne et à Dakar. Structuration des itinéraires, tarification claire et planification de voyage.</p>
+                    <div class="tech-pills-row">
+                                              <span class="tech-pill accent">JavaScript</span>
+                                              <span class="tech-pill ">Responsive Design</span>
+                                              <span class="tech-pill accent">UX Thinking</span>
+                                              <span class="tech-pill ">Services</span>
+                                          </div>
+                  </div>
+
+                  <div class="project-card-footer">
+                                          <span class="text-muted" style="font-size: 0.78rem;">Mobilité &amp; Services</span>
+                    
+                    <a class="project-card-link" href="#fouta">
+                      Détails <span>↓</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
+              </article>
+                                                <!-- AUTRES PROJETS -->
+                            <article class="project-item-card project-card" id="senquiz" data-category="app" data-search="senquiz quizsenculture quiz senegal culture education histoire geographie javascript dom interactif">
+                <div class="project-thumbnail" style="background-color: #e0f2fe;">
+                  <span class="project-category-badge">Éducation &amp; Culture</span>
+                                      <img src="../images/logo-senquiz.svg" alt="Logo SenQuiz — Quiz Culturel Sénégalais" width="220" height="120">
+                                  </div>
 
-              <div class="featured-actions">
-                <a class="button button-primary" href="https://github.com/HabyNdom/plateforme-recrutement-escoa" target="_blank" rel="noopener noreferrer">
-                  <span>Voir le dépôt de code sur GitHub</span>
-                  <span aria-hidden="true">↗</span>
-                </a>
-                <a class="button button-outline" href="contact.html">
-                  <span>Demander une démo technique</span>
-                  <span aria-hidden="true">✉</span>
-                </a>
-              </div>
-            </div>
+                <div class="project-card-content">
+                  <div>
+                    <h3>SenQuiz — Quiz Culturel Sénégalais</h3>
+                    <p>Application web interactive ludique pour valoriser le patrimoine, l&#039;histoire et la culture sénégalaise. Moteur de questions dynamiques, chronomètre interactif, calcul de score et restitution pédagogique.</p>
+                    <div class="tech-pills-row">
+                                              <span class="tech-pill accent">JavaScript ES6+</span>
+                                              <span class="tech-pill ">Manipulation DOM</span>
+                                              <span class="tech-pill ">Animations CSS</span>
+                                              <span class="tech-pill ">Gamification</span>
+                                          </div>
+                  </div>
 
-            <div class="featured-visual">
-              <span class="featured-badge-overlay">Recrutement Universitaire</span>
-              <img src="../images/logo-recrutement.svg" alt="Aperçu graphique de la Plateforme de Recrutement ESCOA" width="340" height="200">
-            </div>
-          </article>
-
-          <!-- PROJET 2 : QSEN (E-COMMERCE QUINCAILLERIE) -->
-          <article class="project-item-card project-card" id="qsen" data-category="ecommerce" data-search="qsen boutique quincaillerie e-commerce outils materiaux panier html css javascript">
-            <div class="project-thumbnail" style="background-color: #dcfce7;">
-              <span class="project-category-badge">E-Commerce</span>
-              <img src="../images/logo-qsen.svg" alt="Logo de la boutique Qsen" width="220" height="120">
-            </div>
-            <div class="project-card-content">
-              <div>
-                <h3>Qsen — Quincaillerie en Ligne</h3>
-                <p>
-                  Conception d'une boutique en ligne dédiée au secteur de la quincaillerie et des matériaux de construction. L'interface a été optimisée pour rendre la commande d'outillage simple, rapide et accessible sur tous les supports numériques.
-                </p>
-                <div class="tech-pills-row">
-                  <span class="tech-pill">HTML5</span>
-                  <span class="tech-pill">CSS3 Flexbox/Grid</span>
-                  <span class="tech-pill">JavaScript</span>
-                  <span class="tech-pill">Panier Dynamique</span>
-                  <span class="tech-pill">Mobile-First</span>
+                  <div class="project-card-footer">
+                                          <a class="project-card-link" href="https://github.com/HabyNdom/QuizSenCulture" target="_blank" rel="noopener noreferrer">
+                        Code GitHub <span>↗</span>
+                      </a>
+                    
+                    <a class="project-card-link" href="#senquiz">
+                      Détails <span>↓</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="project-card-footer">
-                <span class="text-muted" style="font-size: 0.78rem;">Boutique en ligne</span>
-                <a class="project-card-link" href="#qsen">
-                  Détails <span>↓</span>
-                </a>
-              </div>
-            </div>
-          </article>
+              </article>
+                                                <!-- AUTRES PROJETS -->
+                            <article class="project-item-card project-card" id="calculatrice" data-category="app" data-search="calculatrice application web math calcul operations arithmetiques javascript dom ecouteurs evenements">
+                <div class="project-thumbnail" style="background-color: #f1f5f9;">
+                  <span class="project-category-badge">Utilitaire Web</span>
+                                      <img src="../images/logo-calculatrice.svg" alt="Logo Calculatrice Web Interactive" width="220" height="120">
+                                  </div>
 
-          <!-- PROJET 3 : LAAWOL (TRANSPORT & MOBILITÉ) -->
-          <article class="project-item-card project-card" id="fouta" data-category="service" data-search="laawol fouta aibd dakar transport mobilite reservation voiture services trajets voyage">
-            <div class="project-thumbnail" style="background-color: #fef3c7;">
-              <span class="project-category-badge">Transport &amp; Mobilité</span>
-              <img src="../images/logo-laawol.svg" alt="Logo de Laawol transport" width="220" height="120">
-            </div>
-            <div class="project-card-content">
-              <div>
-                <h3>LAAWOL — Mobilité Fouta ↔ AIBD / Dakar</h3>
-                <p>
-                  Plateforme digitale facilitant la réservation de trajets interurbains reliant la région du Fouta à l'aéroport international Blaise Diagne et à Dakar. Structuration des itinéraires, tarification transparente et prise en compte des contraintes locales.
-                </p>
-                <div class="tech-pills-row">
-                  <span class="tech-pill">JavaScript</span>
-                  <span class="tech-pill">Responsive Web Design</span>
-                  <span class="tech-pill">UX / Parcours Voyageur</span>
-                  <span class="tech-pill">Service de Transport</span>
+                <div class="project-card-content">
+                  <div>
+                    <h3>Calculatrice Web Interactive</h3>
+                    <p>Application arithmétique développée en JavaScript vanilla. Gestion précise des priorités d&#039;opérations, prise en charge du clavier physique, gestion des erreurs mathématiques et affichage réactif.</p>
+                    <div class="tech-pills-row">
+                                              <span class="tech-pill accent">JavaScript Vanilla</span>
+                                              <span class="tech-pill ">Logique Arithmétique</span>
+                                              <span class="tech-pill ">Key Events</span>
+                                              <span class="tech-pill ">CSS Flexbox</span>
+                                          </div>
+                  </div>
+
+                  <div class="project-card-footer">
+                                          <a class="project-card-link" href="https://github.com/HabyNdom/calculatrice" target="_blank" rel="noopener noreferrer">
+                        Code GitHub <span>↗</span>
+                      </a>
+                    
+                    <a class="project-card-link" href="#calculatrice">
+                      Détails <span>↓</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="project-card-footer">
-                <span class="text-muted" style="font-size: 0.78rem;">Service de mobilité</span>
-                <a class="project-card-link" href="#fouta">
-                  Détails <span>↓</span>
-                </a>
-              </div>
-            </div>
-          </article>
+              </article>
+                                                <!-- AUTRES PROJETS -->
+                            <article class="project-item-card project-card" id="marketing" data-category="service" data-search="marketing digital campagne meta ads escoa conversion publicite analytics etudiants inscriptions">
+                <div class="project-thumbnail" style="background-color: #fee2e2;">
+                  <span class="project-category-badge">Commerce &amp; Digital</span>
+                                      <div style="font-family: var(--font-heading); font-weight: 700; font-size: 1.3rem; color: #991b1b; text-align: center; padding: 1rem;">
+                      ESCOA DIGITAL ADS
+                      <div style="font-size: 0.75rem; color: #dc2626; font-weight: 500; margin-top: 0.3rem;">Stratégie d'Acquisition &amp; Campagnes</div>
+                    </div>
+                                  </div>
 
-          <!-- PROJET 4 : SENQUIZ / QUIZ SEN CULTURE -->
-          <article class="project-item-card project-card" id="senquiz" data-category="app" data-search="senquiz quizsenculture quiz senegal culture education histoire geographie javascript dom interactif">
-            <div class="project-thumbnail" style="background-color: #e0f2fe;">
-              <span class="project-category-badge">Éducation &amp; Culture</span>
-              <img src="../images/logo-senquiz.svg" alt="Logo de l'application SenQuiz" width="220" height="120">
-            </div>
-            <div class="project-card-content">
-              <div>
-                <h3>SenQuiz — Quiz Culturel Sénégalais</h3>
-                <p>
-                  Application web interactive ludique visant à promouvoir la richesse culturelle, historique et géographique du Sénégal. Embarque un moteur de questions dynamiques, un chronomètre interactif, un calcul de score et une restitution pédagogique des réponses.
-                </p>
-                <div class="tech-pills-row">
-                  <span class="tech-pill accent">JavaScript ES6+</span>
-                  <span class="tech-pill">Manipulation DOM</span>
-                  <span class="tech-pill">Animations CSS</span>
-                  <span class="tech-pill">Gamification</span>
+                <div class="project-card-content">
+                  <div>
+                    <h3>Stratégie d&#039;Acquisition Digitale — ESCOA</h3>
+                    <p>Élaboration d&#039;une stratégie de communication digitale et déploiement de campagnes Meta Ads pour promouvoir les filières académiques et optimiser le taux de conversion des inscriptions étudiantes.</p>
+                    <div class="tech-pills-row">
+                                              <span class="tech-pill accent">Marketing Digital</span>
+                                              <span class="tech-pill ">Meta Ads</span>
+                                              <span class="tech-pill accent">Tunnel de Conversion</span>
+                                              <span class="tech-pill ">Analytics</span>
+                                          </div>
+                  </div>
+
+                  <div class="project-card-footer">
+                                          <span class="text-muted" style="font-size: 0.78rem;">Commerce &amp; Stratégie</span>
+                    
+                    <a class="project-card-link" href="#marketing">
+                      Détails <span>↓</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="project-card-footer">
-                <a class="project-card-link" href="https://github.com/HabyNdom/QuizSenCulture" target="_blank" rel="noopener noreferrer">
-                  Code GitHub <span>↗</span>
-                </a>
-                <span class="text-muted" style="font-size: 0.78rem;">Projet Éducatif</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJET 5 : CALCULATRICE WEB INTERACTIVE -->
-          <article class="project-item-card project-card" id="calculatrice" data-category="app" data-search="calculatrice application web math calcul operations arithmetiques javascript dom ecouteurs evenements">
-            <div class="project-thumbnail" style="background-color: #f1f5f9;">
-              <span class="project-category-badge">Utilitaire Web</span>
-              <img src="../images/logo-calculatrice.svg" alt="Visualisation de la Calculatrice Web" width="220" height="120">
-            </div>
-            <div class="project-card-content">
-              <div>
-                <h3>Calculatrice Web Interactive</h3>
-                <p>
-                  Application arithmétique développée en JavaScript vanilla. Gestion précise des priorités d'opérations, prise en charge des raccourcis clavier, gestion des erreurs mathématiques et affichage réactif sur smartphone et ordinateur.
-                </p>
-                <div class="tech-pills-row">
-                  <span class="tech-pill accent">JavaScript Vanilla</span>
-                  <span class="tech-pill">Logique Arithmétique</span>
-                  <span class="tech-pill">Key Events</span>
-                  <span class="tech-pill">CSS Flexbox</span>
-                </div>
-              </div>
-              <div class="project-card-footer">
-                <a class="project-card-link" href="https://github.com/HabyNdom/calculatrice" target="_blank" rel="noopener noreferrer">
-                  Code GitHub <span>↗</span>
-                </a>
-                <span class="text-muted" style="font-size: 0.78rem;">Application Utile</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJET 6 : CAMPAGNES DIGITALES & ACQUISITION ESCOA -->
-          <article class="project-item-card project-card" id="marketing" data-category="service" data-search="marketing digital campagne meta ads escoa conversion publicite analytics etudiants inscriptions">
-            <div class="project-thumbnail" style="background-color: #fee2e2;">
-              <span class="project-category-badge">Commerce &amp; Digital</span>
-              <div style="font-family: var(--font-heading); font-weight: 700; font-size: 1.4rem; color: #991b1b; text-align: center; padding: 1rem;">
-                ESCOA DIGITAL ADS
-                <div style="font-size: 0.75rem; color: #dc2626; font-weight: 500; margin-top: 0.3rem;">Stratégie d'Acquisition &amp; Campagnes</div>
-              </div>
-            </div>
-            <div class="project-card-content">
-              <div>
-                <h3>Stratégie d'Acquisition Digitale — ESCOA</h3>
-                <p>
-                  Élaboration d'une stratégie de communication digitale et déploiement de campagnes Meta Ads pour promouvoir les filières académiques et optimiser le taux de conversion des inscriptions étudiantes.
-                </p>
-                <div class="tech-pills-row">
-                  <span class="tech-pill">Marketing Digital</span>
-                  <span class="tech-pill">Meta Ads</span>
-                  <span class="tech-pill">Tunnel de Conversion</span>
-                  <span class="tech-pill">Analytics</span>
-                </div>
-              </div>
-              <div class="project-card-footer">
-                <span class="text-muted" style="font-size: 0.78rem;">Acquisition &amp; Commerce</span>
-                <a class="project-card-link" href="contact.html">
-                  En savoir plus <span>↗</span>
-                </a>
-              </div>
-            </div>
-          </article>
-
+              </article>
+                      
         </div>
 
         <!-- MESSAGE EN CAS DE RECHERCHE SANS RÉSULTAT -->
@@ -312,7 +320,6 @@
       </section>
     </main>
 
-    <!-- PIED DE PAGE -->
     <footer class="site-footer">
       <div class="section-wrap footer-content">
         <div>
@@ -321,13 +328,11 @@
             <span>Haby.Ndom</span>
           </a>
           <p style="margin-top: 0.4rem; font-size: 0.8rem;">
-            Développeuse Web &amp; Logiciel · Dakar, Sénégal
-          </p>
+            Développeuse Web &amp; Logiciel · Dakar, Sénégal          </p>
         </div>
 
         <p>
-          Fait avec attention par Haby Ndom · <span class="current-year">2026</span>
-        </p>
+          Conçu &amp; développé avec PHP, HTML, CSS &amp; JS par Haby Ndom · 2026        </p>
 
         <div class="footer-links">
           <a href="https://github.com/HabyNdom" target="_blank" rel="noopener noreferrer">GitHub</a>
