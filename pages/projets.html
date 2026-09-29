@@ -1,13 +1,341 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Les projets web et digitaux de Haby Ndom."><title>Projets | Haby Ndom</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../css/style.css"><script src="../js/main.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez les réalisations logicielles et web de Haby Ndom : Plateforme de recrutement ESCOA, E-commerce, Mobilité, Quiz culturel et Applications interactives.">
+  <meta name="author" content="Haby Ndom">
+  <title>Projets &amp; Réalisations | Haby Ndom</title>
+  
+  <!-- Polices Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
 </head>
-<body><div class="site-shell"><header class="site-header"><a class="brand" href="../index.html"><span class="brand-mark">HN</span><span>Haby<span class="brand-dot">.</span></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Ouvrir le menu</span></button><nav class="main-nav" id="main-nav" aria-label="Navigation principale"><a href="../index.html">Accueil</a><a class="active" href="projets.html">Projets</a><a href="apropos.html">A propos</a><a href="contact.html" class="nav-cta">Me contacter <span>↗</span></a><button class="theme-toggle" type="button" aria-label="Activer le mode sombre" title="Mode sombre">◐</button></nav></header>
-<main><section class="page-hero section-wrap"><p class="eyebrow"><span class="eyebrow-line"></span> Mon travail</p><h1>Des idées devenues<br><em>réalisations.</em></h1><p class="page-intro">Chaque projet est une occasion d'apprendre, de résoudre un problème et de créer une expérience plus simple.</p></section><section class="project-list-section section-wrap"><form class="search-projects" role="search"><label for="project-search">Rechercher un projet</label><div class="search-input"><span aria-hidden="true">⌕</span><input id="project-search" type="search" placeholder="Ex : JavaScript, commerce..." autocomplete="off"></div></form><div class="filter-row" aria-label="Filtrer par categorie"><button class="filter-button active" type="button" data-filter="all">Tous</button><button class="filter-button" type="button" data-filter="web">Web</button><button class="filter-button" type="button" data-filter="commerce">Commerce digital</button><button class="filter-button" type="button" data-filter="service">Services</button></div><div class="full-project-grid">
-<a class="project-card project-card-large" id="qsen" data-category="commerce web" data-search="qsen boutique quincaillerie commerce digital html css javascript" href="#qsen"><div class="project-image project-qsen"><span class="project-number">01</span><span class="project-label">QSEN / 2025</span>
-  <img class="project-logo" src="../images/logo-qsen.svg" alt="Logo de la boutique Qsen">
-  <span class="project-shape shape-box"></span></div><div class="project-info"><div><h3>Qsen</h3><p>Boutique en ligne de quincaillerie pensée pour rendre l'achat de matériels simple et accessible.</p><span class="tech-tags">HTML · CSS · JavaScript · E-commerce</span></div><span class="arrow-circle">↗</span></div></a>
-<a class="project-card project-card-large" id="fouta" data-category="service web" data-search="LAAWOl voiture location transport aibd javascript" href="#fouta"><div class="project-image project-fouta"><span class="project-number">02</span><span class="project-label">LAAWOL / 2025</span><img class="project-logo" src="../images/logo-laawol.svg" alt="Logo du service Laawol"><span class="road road-one"></span><span class="road road-two"></span></div><div class="project-info"><div><h3>LAAWOL</h3><p>Plateforme de location de voiture reliant le Fouta et l'AIBD dans les deux sens.</p><span class="tech-tags">HTML · CSS · JavaScript · UX</span></div><span class="arrow-circle">↗</span></div></a>
-<a class="project-card project-card-large" id="senquiz" data-category="web" data-search="senquiz quiz education apprentissage javascript" href="#senquiz"><div class="project-image project-quiz"><span class="project-number">03</span><span class="project-label">SENQUIZ / 2026</span><img class="project-logo" src="../images/logo-senquiz.svg" alt="Logo de SenQuiz"><span class="quiz-mark">?</span></div><div class="project-info"><div><h3>SenQuiz</h3><p>Un quiz interactif pour apprendre, tester ses connaissances et progresser avec plaisir.</p><span class="tech-tags">HTML · CSS · JavaScript · Education</span></div><span class="arrow-circle">↗</span></div></a></div><p class="empty-state" hidden>Aucun projet ne correspond a cette recherche.</p></section></main><footer class="site-footer section-wrap"><a class="brand" href="../index.html"><span class="brand-mark">HN</span><span>Haby<span class="brand-dot">.</span></span></a><p>Fait avec attention par Haby Ndom · 2026</p><div class="footer-links"><a href="contact.html">Email</a><a href="https://fr.linkedin.com/">LinkedIn</a><a href="https://github.com/">GitHub</a></div></footer></div></body></html>
+<body>
+  <div class="site-shell">
+    <!-- EN-TÊTE DU SITE -->
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Accueil de Haby Ndom">
+        <span class="brand-mark">HN</span>
+        <div>
+          <span>Haby<span class="brand-dot">.</span>Ndom</span>
+          <span class="brand-role">Développeuse Web</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <a href="../index.html">Accueil</a>
+        <a class="active" href="projets.html">Projets</a>
+        <a href="../index.html#competences">Compétences</a>
+        <a href="../index.html#transversales">Soft Skills</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html" class="nav-cta">Me contacter <span>↗</span></a>
+        <button class="theme-toggle" type="button" aria-label="Basculer le mode sombre" title="Basculer le mode sombre">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HÉRO DE LA PAGE PROJETS -->
+      <section class="page-hero">
+        <div class="section-wrap">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span> Travaux &amp; Réalisations
+          </div>
+          <h1>Des problématiques réelles résolues par le <em>code.</em></h1>
+          <p class="page-intro">
+            Chaque réalisation est pensée comme une solution complète : conception de l'architecture, modélisation des données, sécurisation rigoureuse et ergonomie soignée pour l'utilisateur final.
+          </p>
+        </div>
+      </section>
+
+      <!-- BARRE DE RECHERCHE & FILTRES DYNAMIQUES -->
+      <section class="section-wrap" style="padding-top: 3.5rem;">
+        <div class="projects-filter-bar">
+          <div class="filter-pills" role="tablist" aria-label="Filtrer les projets par catégorie">
+            <button class="filter-btn active" type="button" data-filter="all">Tous les projets (06)</button>
+            <button class="filter-btn" type="button" data-filter="backend">Backend &amp; SQL (PHP)</button>
+            <button class="filter-btn" type="button" data-filter="ecommerce">E-Commerce</button>
+            <button class="filter-btn" type="button" data-filter="service">Mobilité &amp; Services</button>
+            <button class="filter-btn" type="button" data-filter="app">Applications Web</button>
+          </div>
+
+          <div class="search-box">
+            <span aria-hidden="true" style="color: var(--text-subtle);">🔍</span>
+            <input id="project-search" type="search" placeholder="Rechercher par mot-clé (ex: PHP, SQL, Quiz...)" aria-label="Rechercher un projet">
+          </div>
+        </div>
+
+        <!-- GRILLE DE TOUS LES PROJETS -->
+        <div class="full-projects-grid">
+          
+          <!-- PROJET 1 : PLATEFORME DE RECRUTEMENT ESCOA (PROJET VEDETTE EN PLEINE LARGEUR) -->
+          <article class="project-item-card project-card-featured-wide featured-card" id="recrutement" data-category="backend app" data-search="plateforme recrutement escoa professeurs enseignement php mysql pdo sql csrf bcrypt mvc apache candidatures">
+            <div class="featured-body">
+              <div>
+                <span class="featured-tag">★ Projet Phare · Full-Stack Web &amp; Sécurité</span>
+                <h3>Plateforme de Recrutement — ESCOA</h3>
+                <p class="featured-desc">
+                  Système d'information et application web complète de gestion des recrutements pour l'enseignement supérieur. Conçue pour remplacer la gestion manuelle par un système automatisé, transparent et sécurisé, assurant le traitement fluide des candidatures de professeurs et vacataires.
+                </p>
+
+                <!-- Spécifications techniques détaillées -->
+                <div class="featured-highlights">
+                  <div class="highlight-item">
+                    <strong>🛡️ Sécurité &amp; Intégrité Applicative</strong>
+                    <span>Requêtes SQL 100% préparées via PDO, hachage bcrypt des mots de passe, tokens CSRF sur tous les formulaires, limitation de débit (5 tentatives / 15 min anti brute-force).</span>
+                  </div>
+                  <div class="highlight-item">
+                    <strong>📄 Uploads Sécurisés &amp; Protection Serveur</strong>
+                    <span>Vérification de la signature MIME réelle des fichiers PDF déposés (CV, diplômes) et verrouillage strict de l'exécution de scripts grâce à un fichier <code>.htaccess</code> dédié.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <strong>🎓 Espace Candidat Complet</strong>
+                    <span>Inscription, gestion détaillée du profil académique, téléversement de justificatifs, postulation en un clic et suivi temps réel de l'état de chaque dossier.</span>
+                  </div>
+                  <div class="highlight-item">
+                    <strong>📊 Tableau de Bord Admin &amp; Recruteur</strong>
+                    <span>Statistiques d'embauche en direct, publication et gestion des offres d'enseignement, workflow complet de révision (validation, rejet, mise en attente avec annotations privées).</span>
+                  </div>
+                </div>
+
+                <div class="tech-pills-row">
+                  <span class="tech-pill accent">PHP 8</span>
+                  <span class="tech-pill accent">MySQL / PDO</span>
+                  <span class="tech-pill">Architecture MVC / Modulaire</span>
+                  <span class="tech-pill">Sécurité CSRF &amp; Bcrypt</span>
+                  <span class="tech-pill">Validation MIME</span>
+                  <span class="tech-pill">JavaScript ES6+</span>
+                  <span class="tech-pill">Apache (.htaccess)</span>
+                </div>
+              </div>
+
+              <div class="featured-actions">
+                <a class="button button-primary" href="https://github.com/HabyNdom/plateforme-recrutement-escoa" target="_blank" rel="noopener noreferrer">
+                  <span>Voir le dépôt de code sur GitHub</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a class="button button-outline" href="contact.html">
+                  <span>Demander une démo technique</span>
+                  <span aria-hidden="true">✉</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="featured-visual">
+              <span class="featured-badge-overlay">Recrutement Universitaire</span>
+              <img src="../images/logo-recrutement.svg" alt="Aperçu graphique de la Plateforme de Recrutement ESCOA" width="340" height="200">
+            </div>
+          </article>
+
+          <!-- PROJET 2 : QSEN (E-COMMERCE QUINCAILLERIE) -->
+          <article class="project-item-card project-card" id="qsen" data-category="ecommerce" data-search="qsen boutique quincaillerie e-commerce outils materiaux panier html css javascript">
+            <div class="project-thumbnail" style="background-color: #dcfce7;">
+              <span class="project-category-badge">E-Commerce</span>
+              <img src="../images/logo-qsen.svg" alt="Logo de la boutique Qsen" width="220" height="120">
+            </div>
+            <div class="project-card-content">
+              <div>
+                <h3>Qsen — Quincaillerie en Ligne</h3>
+                <p>
+                  Conception d'une boutique en ligne dédiée au secteur de la quincaillerie et des matériaux de construction. L'interface a été optimisée pour rendre la commande d'outillage simple, rapide et accessible sur tous les supports numériques.
+                </p>
+                <div class="tech-pills-row">
+                  <span class="tech-pill">HTML5</span>
+                  <span class="tech-pill">CSS3 Flexbox/Grid</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">Panier Dynamique</span>
+                  <span class="tech-pill">Mobile-First</span>
+                </div>
+              </div>
+              <div class="project-card-footer">
+                <span class="text-muted" style="font-size: 0.78rem;">Boutique en ligne</span>
+                <a class="project-card-link" href="#qsen">
+                  Détails <span>↓</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJET 3 : LAAWOL (TRANSPORT & MOBILITÉ) -->
+          <article class="project-item-card project-card" id="fouta" data-category="service" data-search="laawol fouta aibd dakar transport mobilite reservation voiture services trajets voyage">
+            <div class="project-thumbnail" style="background-color: #fef3c7;">
+              <span class="project-category-badge">Transport &amp; Mobilité</span>
+              <img src="../images/logo-laawol.svg" alt="Logo de Laawol transport" width="220" height="120">
+            </div>
+            <div class="project-card-content">
+              <div>
+                <h3>LAAWOL — Mobilité Fouta ↔ AIBD / Dakar</h3>
+                <p>
+                  Plateforme digitale facilitant la réservation de trajets interurbains reliant la région du Fouta à l'aéroport international Blaise Diagne et à Dakar. Structuration des itinéraires, tarification transparente et prise en compte des contraintes locales.
+                </p>
+                <div class="tech-pills-row">
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">Responsive Web Design</span>
+                  <span class="tech-pill">UX / Parcours Voyageur</span>
+                  <span class="tech-pill">Service de Transport</span>
+                </div>
+              </div>
+              <div class="project-card-footer">
+                <span class="text-muted" style="font-size: 0.78rem;">Service de mobilité</span>
+                <a class="project-card-link" href="#fouta">
+                  Détails <span>↓</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJET 4 : SENQUIZ / QUIZ SEN CULTURE -->
+          <article class="project-item-card project-card" id="senquiz" data-category="app" data-search="senquiz quizsenculture quiz senegal culture education histoire geographie javascript dom interactif">
+            <div class="project-thumbnail" style="background-color: #e0f2fe;">
+              <span class="project-category-badge">Éducation &amp; Culture</span>
+              <img src="../images/logo-senquiz.svg" alt="Logo de l'application SenQuiz" width="220" height="120">
+            </div>
+            <div class="project-card-content">
+              <div>
+                <h3>SenQuiz — Quiz Culturel Sénégalais</h3>
+                <p>
+                  Application web interactive ludique visant à promouvoir la richesse culturelle, historique et géographique du Sénégal. Embarque un moteur de questions dynamiques, un chronomètre interactif, un calcul de score et une restitution pédagogique des réponses.
+                </p>
+                <div class="tech-pills-row">
+                  <span class="tech-pill accent">JavaScript ES6+</span>
+                  <span class="tech-pill">Manipulation DOM</span>
+                  <span class="tech-pill">Animations CSS</span>
+                  <span class="tech-pill">Gamification</span>
+                </div>
+              </div>
+              <div class="project-card-footer">
+                <a class="project-card-link" href="https://github.com/HabyNdom/QuizSenCulture" target="_blank" rel="noopener noreferrer">
+                  Code GitHub <span>↗</span>
+                </a>
+                <span class="text-muted" style="font-size: 0.78rem;">Projet Éducatif</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJET 5 : CALCULATRICE WEB INTERACTIVE -->
+          <article class="project-item-card project-card" id="calculatrice" data-category="app" data-search="calculatrice application web math calcul operations arithmetiques javascript dom ecouteurs evenements">
+            <div class="project-thumbnail" style="background-color: #f1f5f9;">
+              <span class="project-category-badge">Utilitaire Web</span>
+              <img src="../images/logo-calculatrice.svg" alt="Visualisation de la Calculatrice Web" width="220" height="120">
+            </div>
+            <div class="project-card-content">
+              <div>
+                <h3>Calculatrice Web Interactive</h3>
+                <p>
+                  Application arithmétique développée en JavaScript vanilla. Gestion précise des priorités d'opérations, prise en charge des raccourcis clavier, gestion des erreurs mathématiques et affichage réactif sur smartphone et ordinateur.
+                </p>
+                <div class="tech-pills-row">
+                  <span class="tech-pill accent">JavaScript Vanilla</span>
+                  <span class="tech-pill">Logique Arithmétique</span>
+                  <span class="tech-pill">Key Events</span>
+                  <span class="tech-pill">CSS Flexbox</span>
+                </div>
+              </div>
+              <div class="project-card-footer">
+                <a class="project-card-link" href="https://github.com/HabyNdom/calculatrice" target="_blank" rel="noopener noreferrer">
+                  Code GitHub <span>↗</span>
+                </a>
+                <span class="text-muted" style="font-size: 0.78rem;">Application Utile</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJET 6 : CAMPAGNES DIGITALES & ACQUISITION ESCOA -->
+          <article class="project-item-card project-card" id="marketing" data-category="service" data-search="marketing digital campagne meta ads escoa conversion publicite analytics etudiants inscriptions">
+            <div class="project-thumbnail" style="background-color: #fee2e2;">
+              <span class="project-category-badge">Commerce &amp; Digital</span>
+              <div style="font-family: var(--font-heading); font-weight: 700; font-size: 1.4rem; color: #991b1b; text-align: center; padding: 1rem;">
+                ESCOA DIGITAL ADS
+                <div style="font-size: 0.75rem; color: #dc2626; font-weight: 500; margin-top: 0.3rem;">Stratégie d'Acquisition &amp; Campagnes</div>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <div>
+                <h3>Stratégie d'Acquisition Digitale — ESCOA</h3>
+                <p>
+                  Élaboration d'une stratégie de communication digitale et déploiement de campagnes Meta Ads pour promouvoir les filières académiques et optimiser le taux de conversion des inscriptions étudiantes.
+                </p>
+                <div class="tech-pills-row">
+                  <span class="tech-pill">Marketing Digital</span>
+                  <span class="tech-pill">Meta Ads</span>
+                  <span class="tech-pill">Tunnel de Conversion</span>
+                  <span class="tech-pill">Analytics</span>
+                </div>
+              </div>
+              <div class="project-card-footer">
+                <span class="text-muted" style="font-size: 0.78rem;">Acquisition &amp; Commerce</span>
+                <a class="project-card-link" href="contact.html">
+                  En savoir plus <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- MESSAGE EN CAS DE RECHERCHE SANS RÉSULTAT -->
+        <div class="empty-state" style="display: none; text-align: center; padding: 4rem 1rem;">
+          <p style="font-size: 1.1rem; color: var(--text-muted);">
+            Aucun projet ne correspond à votre recherche. Essayez un autre mot-clé (ex: <em>PHP</em>, <em>SQL</em>, <em>JavaScript</em>, <em>E-Commerce</em>).
+          </p>
+        </div>
+      </section>
+
+      <!-- BANNIÈRE CALL TO ACTION -->
+      <section class="cta-banner">
+        <div class="section-wrap cta-layout">
+          <div>
+            <h2>Un projet logiciel à concevoir ou concrétiser ?</h2>
+            <p>
+              Je mets ma rigueur technique, mes compétences en architecture web et ma sensibilité utilisateur à votre service.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary" href="contact.html">
+              Prendre contact <span>↗</span>
+            </a>
+            <a class="button button-outline" href="../index.html#competences">
+              Revoir mes compétences <span>⚡</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer class="site-footer">
+      <div class="section-wrap footer-content">
+        <div>
+          <a class="brand" href="../index.html" style="font-size: 1.1rem;">
+            <span class="brand-mark" style="width: 28px; height: 28px; font-size: 0.65rem;">HN</span>
+            <span>Haby.Ndom</span>
+          </a>
+          <p style="margin-top: 0.4rem; font-size: 0.8rem;">
+            Développeuse Web &amp; Logiciel · Dakar, Sénégal
+          </p>
+        </div>
+
+        <p>
+          Fait avec attention par Haby Ndom · <span class="current-year">2026</span>
+        </p>
+
+        <div class="footer-links">
+          <a href="https://github.com/HabyNdom" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://github.com/HabyNdom/plateforme-recrutement-escoa" target="_blank" rel="noopener noreferrer">Projet Recrutement</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
