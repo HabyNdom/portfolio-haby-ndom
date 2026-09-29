@@ -39,6 +39,37 @@ include __DIR__ . '/includes/header.php';
             </a>
           </div>
 
+          <!-- BANDEAU SYNTHÈSE RECRUTEUR EXPRESS -->
+          <div class="recruiter-strip">
+            <div class="recruiter-strip-header">
+              <div class="recruiter-strip-title">
+                <span>💼 Fiche Synthèse Recruteur</span>
+                <span class="badge-pill">Disponibilité Immédiate</span>
+              </div>
+              <a class="text-link" href="contact.php" style="font-size: 0.8rem;">
+                Contacter pour un entretien <span>↗</span>
+              </a>
+            </div>
+            <div class="recruiter-data-grid">
+              <div class="recruiter-data-item">
+                <span class="recruiter-data-label">Contrat recherché</span>
+                <span class="recruiter-data-val accent">Stage / Alternance</span>
+              </div>
+              <div class="recruiter-data-item">
+                <span class="recruiter-data-label">Localisation</span>
+                <span class="recruiter-data-val">Dakar &amp; Distanciel</span>
+              </div>
+              <div class="recruiter-data-item">
+                <span class="recruiter-data-label">Formation</span>
+                <span class="recruiter-data-val">Bac+2 Informatique</span>
+              </div>
+              <div class="recruiter-data-item">
+                <span class="recruiter-data-label">Stack Maîtrisée</span>
+                <span class="recruiter-data-val">PHP 8, SQL, JS ES6+</span>
+              </div>
+            </div>
+          </div>
+
           <div class="hero-meta">
             <div>
               <strong>05+</strong>
@@ -57,16 +88,29 @@ include __DIR__ . '/includes/header.php';
           </div>
         </div>
 
-        <!-- VISUEL HÉRO AVEC L'IMAGE DE L'UTILISATRICE -->
+        <!-- VISUEL HÉRO AVEC COMPOSITION PHOTO PROFESSIONNELLE -->
         <div class="hero-visual reveal reveal-delay-1">
-          <div class="photo-card-wrapper">
-            <div class="floating-pill floating-top">
-              <span>⚡</span>
-              <span>Code &amp; Architecture</span>
+          <div class="photo-composite-card">
+            <!-- Badge supérieur avec photo institutionnelle ESCOA -->
+            <div class="photo-sub-badge">
+              <div class="photo-sub-avatar">
+                <img src="images/image-acceuil.jpg" alt="Haby Ndom en tailleur ESCOA" width="32" height="32">
+              </div>
+              <div class="photo-sub-text">
+                <strong>Haby NDOM</strong>
+                <span>Formation d'Excellence · ESCOA</span>
+              </div>
             </div>
 
-            <div class="photo-card">
-              <img src="images/haby-dev.jpg" alt="Haby Ndom concentrée sur son ordinateur portable lors d'une session de développement" width="390" height="520">
+            <!-- Floating pill haut droite -->
+            <div class="floating-pill floating-top">
+              <span>⚡</span>
+              <span>PHP 8 &amp; MVC</span>
+            </div>
+
+            <!-- Cadre photo principal (Haby au travail) -->
+            <div class="photo-composite-frame">
+              <img class="main-photo" src="images/haby-dev.jpg" alt="Haby Ndom concentrée sur son ordinateur portable lors d'une session de développement" width="390" height="520">
               <div class="photo-badge">
                 <div>
                   <div class="photo-badge-name"><?= e(SITE_NAME) ?></div>
@@ -76,9 +120,10 @@ include __DIR__ . '/includes/header.php';
               </div>
             </div>
 
+            <!-- Floating pill bas gauche -->
             <div class="floating-pill floating-bottom">
               <span>🛡️</span>
-              <span>Sécurité, SQL &amp; Rigueur</span>
+              <span>Sécurité &amp; PDO Préparé</span>
             </div>
           </div>
         </div>
@@ -304,6 +349,55 @@ include __DIR__ . '/includes/header.php';
               <div class="photo-card" style="aspect-ratio: 4 / 5;">
                 <img src="images/haby-dev.jpg" alt="Portrait de Haby Ndom au travail" width="380" height="475">
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION POURQUOI RECRUTER MON PROFIL -->
+      <section class="why-hire-section reveal">
+        <div class="section-wrap">
+          <div class="section-kicker">06 <span></span> Recrutement &amp; Valeur Ajoutée</div>
+          <h2>Pourquoi intégrer mon profil dans votre équipe ?</h2>
+          <p class="hero-intro" style="margin-top: 0.8rem;">
+            Des arguments tangibles et vérifiables dans mes projets pour accélérer vos développements avec sérénité.
+          </p>
+
+          <div class="why-hire-grid">
+            <div class="why-hire-card">
+              <span class="why-hire-icon">🛡️</span>
+              <h3>Sécurité &amp; Zéro Injection SQL</h3>
+              <p>
+                Approche "Security by Design" : requêtes préparées PDO systématiques, tokens anti-CSRF, hachage bcrypt, assainissement XSS et contrôle MIME des uploads.
+              </p>
+              <div class="why-hire-metric">✓ 100% Code durci &amp; audité</div>
+            </div>
+
+            <div class="why-hire-card">
+              <span class="why-hire-icon">🏗️</span>
+              <h3>Architecture MVC &amp; Code Propre</h3>
+              <p>
+                Découpage modulaire clair : logique métier isolée, séparation modèle / vue / contrôleur, principes DRY &amp; KISS pour une maintenance facile à long terme.
+              </p>
+              <div class="why-hire-metric">✓ Dette technique minimisée</div>
+            </div>
+
+            <div class="why-hire-card">
+              <span class="why-hire-icon">⚡</span>
+              <h3>Autonomie &amp; Capacité de Livraison</h3>
+              <p>
+                Capacité prouvée à concevoir une application de A à Z : modélisation de la base de données relationnelle, écriture du backend, interface utilisateur et mise en production.
+              </p>
+              <div class="why-hire-metric">✓ Projets réels livrés</div>
+            </div>
+
+            <div class="why-hire-card">
+              <span class="why-hire-icon">💼</span>
+              <h3>Posture Pro &amp; Sens du Produit</h3>
+              <p>
+                Double sensibilité en développement web et commerce digital. Je comprends les enjeux d'acquisition, la rentabilité et l'impact utilisateur direct de chaque fonctionnalité.
+              </p>
+              <div class="why-hire-metric">✓ Vision orientée ROI &amp; UX</div>
             </div>
           </div>
         </div>
